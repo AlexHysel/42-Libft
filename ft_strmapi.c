@@ -23,13 +23,17 @@ char	*ft_strmapi(char const *s, char (*func)(unsigned int, char))
 	result = malloc(size + 1);
 	if (!result)
 		return (NULL);
-	result[size--] = '\0';
-	while (1)
+	result[size] = '\0';
+	if (size > 0)
 	{
-		result[size] = func(size, s[size]);
-		if (size == 0)
-			break ;
 		size--;
+		while (1)
+		{
+			result[size] = func(size, s[size]);
+			if (size == 0)
+				break ;
+			size--;
+		}
 	}
 	return (result);
 }

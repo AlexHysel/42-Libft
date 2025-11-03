@@ -17,7 +17,7 @@ void	*ft_calloc(size_t num, size_t size)
 	void	*array;
 	size_t	i;
 
-	if (size > (size_t) -1 / num)
+	if (num != 0 && size > (size_t)-1 / num)
 		return (NULL);
 	i = size * num;
 	array = malloc(i);
