@@ -6,7 +6,7 @@
 /*   By: afomin afomin@student.42kl.edu.my          #+#  +:+        #+#       */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 14:05:34 by afomin            #+#    #+#             */
-/*   Updated: 2025/11/16 17:58:57 by afomin           ###   ########.fr       */
+/*   Updated: 2025/11/29 18:06:44 by afomin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,25 +31,18 @@ static void	stash_expand(char **stash, char *buffer, ssize_t len)
 	*stash = expanded;
 }
 
-static char	*stash_extract_line(char **stash, int was_read)
+static char	*stash_extract_line(char **stash)
 {
 	char	*line;
 	char	*ptr_stash;
 	size_t	nl;
 
-	if (!*stash)
-		return (NULL);
-	if (was_read < 0)
-	{
-		free(*stash);
-		return (NULL);
-	}
 	nl = 0;
 	while ((*stash)[nl] && (*stash)[nl] != '\n')
 		nl++;
 	line = ft_substr(*stash, 0, ++nl);
 	ptr_stash = *stash;
-	if (was_read > 0 && ptr_stash[nl])
+	if (ptr_stash[nl])
 		*stash = ft_substr(*stash, nl, ft_strlen(*stash) - nl);
 	else
 		*stash = NULL;
@@ -69,7 +62,7 @@ char	*get_next_line(int fd)
 	was_read = 1;
 	if (!ft_strchr(stash, '\n'))
 	{
-		while (!stash || !ft_strchr(buffer, '\n'))
+		while (!ft_strchr(buffer, '\n'))
 		{
 			was_read = read(fd, buffer, BUFFER_SIZE);
 			if (was_read <= 0)
@@ -78,5 +71,9 @@ char	*get_next_line(int fd)
 		}
 	}
 	free(buffer);
-	return (stash_extract_line(&stash, was_read));
+	if (was_read > 0)
+		return (stash_extract_line(&stash));
+	if (stash)
+		free(stash);
+	return (NULL);
 }
