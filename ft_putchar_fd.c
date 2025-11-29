@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: afomin <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: afomin afomin@student.42kl.edu.my          #+#  +:+        #+#       */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 17:05:36 by afomin            #+#    #+#             */
 /*   Updated: 2025/10/23 17:06:45 by afomin           ###   ########.fr       */

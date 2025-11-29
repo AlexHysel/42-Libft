@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: afomin <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: afomin afomin@student.42kl.edu.my          #+#  +:+        #+#       */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 16:57:07 by afomin            #+#    #+#             */
 /*   Updated: 2025/10/24 18:42:34 by afomin           ###   ########.fr       */

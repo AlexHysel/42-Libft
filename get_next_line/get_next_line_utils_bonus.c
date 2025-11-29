@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: afomin <alexhysel@gmail.com>               +#+  +:+       +#+        */
+/*   By: afomin afomin@student.42kl.edu.my          #+#  +:+        #+#       */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 18:43:46 by afomin            #+#    #+#             */
-/*   Updated: 2025/11/29 16:55:16 by afomin           ###   ########.fr       */
+/*   Updated: 2025/11/29 17:39:38 by afomin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 #include <stdio.h>
+
 t_fd_list	*node_by_fd(t_fd_list *list, int fd)
 {
 	while (list && list->fd != fd)
@@ -31,7 +32,7 @@ void	remove_node(int fd, t_fd_list **list)
 		while (curr_n)
 		{
 			if (curr_n->fd == fd)
-			{	
+			{
 				if (prev_n)
 					prev_n->next = curr_n->next;
 				else

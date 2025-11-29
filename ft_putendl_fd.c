@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: afomin <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: afomin afomin@student.42kl.edu.my          #+#  +:+        #+#       */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 17:46:23 by afomin            #+#    #+#             */
 /*   Updated: 2025/10/23 18:28:14 by afomin           ###   ########.fr       */

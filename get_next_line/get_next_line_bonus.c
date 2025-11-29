@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: afomin <alexhysel@gmail.com>               +#+  +:+       +#+        */
+/*   By: afomin afomin@student.42kl.edu.my          #+#  +:+        #+#       */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/09 14:00:13 by afomin            #+#    #+#             */
 /*   Updated: 2025/11/29 16:54:38 by afomin           ###   ########.fr       */

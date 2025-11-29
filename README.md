@@ -3,7 +3,7 @@
 ## 💡 Project Overview
 
 The Libft project is a fundamental exercise at 42 School designed to familiarize students with the C programming language and its standard library (<string.h>, <stdlib.h>, etc.). The goal is to reimplement a wide array of commonly used C functions, build a static library (libft.a), and ensure all functions adhere to the strict 42 Norminette style guide.
-
+/*   By: afomin afomin@student.42kl.edu.my          #+#  +:+        #+#       */
 This library serves as the groundwork for all subsequent C projects within the curriculum.
 
 ## ⚙️ Compilation and Installation
