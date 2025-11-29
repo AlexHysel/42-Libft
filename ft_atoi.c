@@ -6,16 +6,13 @@
 /*   By: afomin <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 17:45:50 by afomin            #+#    #+#             */
-/*   Updated: 2025/10/24 18:09:48 by afomin           ###   ########.fr       */
+/*   Updated: 2025/11/29 14:55:47 by afomin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-#include "libft.h"
-
 int	ft_atoi(const char *str)
 {
-	long	result;
+	int		result;
 	short	sign;
 
 	result = 0;
@@ -32,13 +29,3 @@ int	ft_atoi(const char *str)
 	}
 	return (sign * result);
 }
-/*
-int	main()
-{
-	printf("%d\n", ft_atoi("12"));
-	printf("%d\n", ft_atoi(" 132412"));
-	printf("%d\n", ft_atoi("  -123"));
-	printf("%d\n", ft_atoi("+123a"));
-	printf("%d\n", ft_atoi("+-132"));
-}
-*/

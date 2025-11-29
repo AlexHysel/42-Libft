@@ -29,17 +29,17 @@
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 2048
+# endif
 
 # include <unistd.h>
 # include <stdlib.h>
 # include <stddef.h>
+# include <fcntl.h>
+# include "get_next_line/get_next_line.h"
 
-typedef struct s_list
-{
-	void			*content;
-	struct s_list	*next;
-}	t_list;
-
+// LIBFT
 int		ft_atoi(const char *str);
 void	*ft_bzero(void *block, size_t length);
 void	*ft_calloc(size_t num, size_t size);
@@ -74,6 +74,14 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_tolower(char symbol);
 int		ft_toupper(char symbol);
+
+// LIBFT_BONUS
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
+
 t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **lst, t_list *ne);
 int		ft_lstsize(t_list *lst);

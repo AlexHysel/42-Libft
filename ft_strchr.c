@@ -11,24 +11,19 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdio.h>
 
 char	*ft_strchr(const char *str, int symbol)
 {
-	while (*str)
+	if (str)
 	{
-		if (*str == (char) symbol)
+		while (*str)
+		{
+			if (*str == symbol)
+				return ((char *)str);
+			str++;
+		}
+		if (!symbol)
 			return ((char *)str);
-		str++;
 	}
-	if (symbol == '\0')
-		return ((char *)str);
 	return (NULL);
 }
-/*
-int	main(void)
-{
-	printf("%d\n", *ft_strchr("Ejyafyallajokull", 'a'));
-	printf("%d", *ft_strchr("Ejyafyallajokull", 'D'));
-}
-*/
